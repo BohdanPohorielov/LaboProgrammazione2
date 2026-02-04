@@ -1,0 +1,37 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+    <VerticalStackLayout>
+    <Label Text="Risolutore Equazioni" TextColor="Purple" FontSize="Large"></Label>
+    <Label Text="Data l'equazione: ax² + bx + c = 0" TextColor="Gray" FontSize="Small"></Label>
+    
+    <Grid RowSpacing="20" ColumnSpacing="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+         <Label Text="Coefficiente A: " Grid.Row="0" Grid.Column="0"/>
+         <Entry x:Name="CefA" Placeholder="Inserisci a" Grid.Row="0" Grid.Column="1"/>
+         
+         <Label Text="Coefficiente B: " Grid.Row="1" Grid.Column="0"/>
+          <Entry x:Name="CefB" Placeholder="Inserisci b" Grid.Row="1" Grid.Column="1"/>
+        
+         <Label Text="Coefficiente C: " Grid.Row="2" Grid.Column="0"/>
+         <Entry x:Name="CefC" Placeholder="Inserisci c" Grid.Row="2" Grid.Column="1"/>
+
+        </Grid>
+        <Button Clicked="Button_Clicked" Text="Calcola Delta"></Button>
+
+        <Label x:Name="Result" Text=""></Label>
+        
+    </VerticalStackLayout>
+
+</ContentPage>
