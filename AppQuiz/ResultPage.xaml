@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppQuiz.ResultPage"
+             Title="ResultPage">
+    <VerticalStackLayout>
+
+        <Label
+            x:Name="LblComplete"
+            Text="QUIZ COMPLETATO!"
+            FontSize="35"
+            HorizontalTextAlignment="Center"
+            />
+
+
+        <Label 
+            x:Name="LblScore"
+            Text="Score: 0"
+            FontSize="20"
+            BackgroundColor="#ddd"
+            WidthRequest="400"
+            HeightRequest="250"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center">
+        </Label>
+
+        <Label 
+            x:Name="LblBestScore"
+            Text="Your best score is: 45"
+            FontSize="15"
+            TextColor="#efb154"
+            Padding="15"
+            HorizontalTextAlignment="Center"
+           />
+    </VerticalStackLayout>
+</ContentPage>
